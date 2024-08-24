@@ -6,7 +6,7 @@
   prerequisites: | 
     Открыта страница сайта https://codebattle.hexlet.io/
   test-data: |
-    Email = bayazit07@gmail.com
+    Берем новый Email
     Password = bor145
   steps: 
     - Нажать кнопку "Sign up"
@@ -16,8 +16,8 @@
     - Заполнить "Password Confirmation" 
     - Нажать кнопку "Submit"
   expected-result: |
-    Пользователь успешно зарегестрирован 
-
+    Пользователь успешно зарегестрирован, отображается главная страница сайта, в верхнем правом углу страницы отображается никнейм пользователя
+    
 - summary: | 
     Проверка авторизации пользователя с помощью Github
   requirement: |

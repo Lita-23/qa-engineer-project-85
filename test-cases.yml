@@ -268,7 +268,7 @@
   test-data: |
     Iphone-14
     Samsung
-  steps: |
+  steps:
     - Открыть devtools
     - Выбрать меню адаптивноти
     - Выбрать любой мобильный девайс
@@ -291,9 +291,8 @@
     Time control-10min
     tags-rect_area
     Tags-math
-    Правильное решение - 
-    return width * length;
-  steps: |
+    The right decision-return width * length;
+  steps:
     - нажать кнопку "Great a game"
     - выбрать указанные параметры 
     - нажать кнопку "Great battle"

@@ -72,6 +72,7 @@
     Пользователь должен иметь возможность создать игру с ботом 
   prerequisites: |
     Открыта страница сайта https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
   test-data: |
     Level = 1
     Game Type = With a bot
@@ -80,7 +81,7 @@
     Tags = rest
   steps:
     - Нажать на кнопку "Create a game"
-    - Выбрать любые параметры
+    - Выбрать указанные параметры 
     - Нажать на кнопку "Create battle"
   expected-result: |
     Игра с ботом успешно создана 
@@ -91,6 +92,7 @@
     Пользователь должен иметь возможность просматривать рейтинг пользователей
   prerequisites: |
     Открыта страница сайта https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
   test-data: |
     no-data
   steps:
@@ -159,6 +161,7 @@
     Пользователь должен иметь возможность создать игру с другим пользователем
   prerequisites: | 
     Открыта страница https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
   test-data: |
     - Level = 1 
     - Game Type = With other user
@@ -167,7 +170,7 @@
     - Tags  = rest
   steps:
     - нажать кнопку "Great a game"
-    - выбрать параметры игры
+    - выбрать указанные параметры 
     - нажать кнопку "Great battle"
   expected-result: | 
     Игра с другим пользователем успешно создана      
@@ -178,6 +181,7 @@
     Пользователь может создать новую игру с другом
   prerequisites: | 
     Открыта страница https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
   test-data: |
     - Соперник = Lita-23
     - Email для авторизации соперника = aelitochka2002@gmail.ru 

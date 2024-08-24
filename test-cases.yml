@@ -106,7 +106,9 @@
   requirement: |
     Пользователь может поменять язык програмирования в процессе игры
   prerequisites: |
-    no-data
+    Открыта страница https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
+    Игра создана
   test-data: |
     no-data
   steps:
@@ -200,6 +202,8 @@
     Пользователь должен иметь возможность сдаться в игре 
   prerequisites:
     Открыта страница с созданной игрой https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
+    Игра создана
   test-data: |
     no-data
   steps:

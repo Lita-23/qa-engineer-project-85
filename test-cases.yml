@@ -291,13 +291,9 @@
     Time control-10min
     tags-rect_area
     Tags-math
-    Правильное решение-const _ = require("lodash");
-    const R = require("rambda");
-    const solution = (width, length) => {
+    Правильное решение - 
     return width * length;
-    };
-    module.exports = solution;
-  steps:
+  steps: |
     - нажать кнопку "Great a game"
     - выбрать указанные параметры 
     - нажать кнопку "Great battle"

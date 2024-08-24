@@ -257,7 +257,26 @@
     - Выбрать меню адаптивноти
     - Выбрать любой мобильный девайс
   expected-result: |
-    Мобильная версия сайта реализована    
+    Мобильная версия сайта реализована 
+
+- summary: |
+    Проверка адаптивности игры для мобильных устройств
+  requirement: |
+    Сайт с игрой должен быть адаптирован под мобильные устройства\  
+  prerequisites: |
+    Открыта страница https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Iphone-14
+    Samsung
+  steps: |
+   - Открыть devTools
+   - Выбрать меню адаптивности
+   - Выбрать мобильный девайс
+   - нажать кнопку "Great a game"
+   - выбрать любые параметры 
+   - нажать кнопку "Great battle" 
+  expected-result: |
+    Интерфейс игры адаптирован под мобильные устройства, игра активна
 
 - summary: |
     Проверка победы в игре
@@ -289,3 +308,42 @@
     - Нажимаем кнопку "Check solution" 
   expected-result: |
     Появляется окно с сообщением (Woohoo, you're Champion!!!!!)
+
+- summary: |
+    Проверка проигрыша в игре
+  requirement: |
+    После проигрыша в игре пользователю показывается окно о проигрыше
+  prerequisites:
+    Открыта страница https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
+  test-data: |
+    Level-1
+    Game Type- bot
+    Time control-10min
+    tags-rect_area
+    Tags-math
+  steps:
+    - нажать кнопку "Great a game"
+    - выбрать указанные параметры 
+    - нажать кнопку "Great battle"
+    - Вводим любое решение
+    - Нажимаем кнопку "Check solution" 
+  expected-result: |
+    Появляется окно с сообщением (If you read this you've lost the game)
+
+- summary: |
+    Проверка выбора времени в игре
+  requirement: |
+    У пользователя должна быть возможность выбирать продолжительность игры
+  prerequisites: |
+    Открыта страница https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
+  test-data: |
+    no-data
+  steps:
+    - Нажать на "create a game"
+    - В "game type" выбираем "with a bot"
+    - Передвигаем бегунок "time controle" до значения "10 min"
+    - Нажать на "create battle"
+  expected-result: |
+    В поле "timeout in" начался обратный отсчет от выбранного времени

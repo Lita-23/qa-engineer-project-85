@@ -291,8 +291,7 @@
     Time control-10min
     tags-rect_area
     Tags-math
-    Правильное решение-
-    const _ = require("lodash");
+    Правильное решение-const _ = require("lodash");
     const R = require("rambda");
     const solution = (width, length) => {
     return width * length;

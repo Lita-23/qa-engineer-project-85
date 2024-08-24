@@ -223,7 +223,8 @@
     - Email для авторизации соперника = aelitochka2002@gmail.ru 
     - Пароль для авторизации соперника  = lita13
   steps:
-    - Принять приглашение от соперника
+    - Нажать на кнопку "Invites"
+    - Нажать кнопку "Accept"
   expected-result: | 
     Игра с другом успешно создана, игра началась
 
@@ -257,3 +258,34 @@
     - Выбрать любой мобильный девайс
   expected-result: |
     Мобильная версия сайта реализована    
+
+- summary: |
+    Проверка победы в игре
+  requirement: |
+    После победы в игре пользователю показывается окно с поздравлением о победе
+  prerequisites:
+    Открыта страница https://codebattle.hexlet.io/#lobby
+    Пользователь авторизирован
+  test-data: |
+    Level-1
+    Game Type- bot
+    Time control-10min
+    tags-rect_area
+    Tags-math
+    Правильное решение:
+    const _ = require("lodash");
+    const R = require("rambda");
+
+    const solution = (width, length) => {
+    return width * length;
+    };
+
+    module.exports = solution;
+  steps:
+    - нажать кнопку "Great a game"
+    - выбрать указанные параметры 
+    - нажать кнопку "Great battle"
+    - Вводим правильное решение задачи
+    - Нажимаем кнопку "Check solution" 
+  expected-result: |
+    Появляется окно с сообщением (Woohoo, you're Champion!!!!!)
